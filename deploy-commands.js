@@ -30,12 +30,12 @@ const rest = new REST({ version: "9" }).setToken(token);
   });
 
   // 글로벌 명령어 등록 시 주석을 풀고 사용
-  // try {
-  //   await rest.put(Routes.applicationCommands(clientId), {
-  //     body: commands,
-  //   });
-  //   console.log(`글로벌 명령어 등록 성공`);
-  // } catch (error) {
-  //   console.error(error);
-  // }
+  try {
+    await rest.put(Routes.applicationCommands(clientId), {
+      body: commands,
+    });
+    console.log(`글로벌 명령어 등록 성공`);
+  } catch (error) {
+    console.error(error);
+  }
 })();
