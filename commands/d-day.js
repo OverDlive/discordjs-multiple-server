@@ -25,7 +25,7 @@ module.exports = {
         ),
     async execute(interaction) {
         const targetDate = interaction.options.getString("date");
-        const remainingDays = targetDate ? remainingDaysToTarget(targetDate) : remainingDaysToTarget("2024-05-13");
+        const remainingDays = targetDate ? remainingDaysToTarget(targetDate) + 1 : remainingDaysToTarget("2024-05-13");
         let response;
 
         if (remainingDays === 0) {
