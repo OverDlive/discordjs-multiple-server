@@ -13,7 +13,7 @@ function remainingDaysToTarget(targetDate) {
         difference = new Date("2024-05-13") - currentDate;
     }
 
-    return Math.ceil(difference / (1000 * 60 * 60 * 24)) - 1;
+    return Math.ceil(difference / (1000 * 60 * 60 * 24));
 }
 
 module.exports = {
@@ -31,7 +31,7 @@ module.exports = {
         if (remainingDays === 0) {
         response = "오늘은 전역입니다!";
         } else if (remainingDays > 0) {
-        response = `전역날까지 ${remainingDays}일 남았습니다.`;
+        response = `# 전역날까지 ${remainingDays}일 남았습니다.`;
         } else {
         response = "전역했다. 윾승아";
         }

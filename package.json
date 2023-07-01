@@ -12,8 +12,16 @@
   "dependencies": {
     "@discordjs/builders": "^0.12.0",
     "@discordjs/rest": "^0.3.0",
+    "@discordjs/voice": "^0.16.0",
     "discord-api-types": "^0.26.1",
     "discord.js": "^13.6.0",
-    "nodemon": "^2.0.15"
+    "dotenv": "^16.3.1",
+    "googleapis": "^120.0.0",
+    "iso8601-duration": "^2.1.1",
+    "nodemon": "^1.14.9",
+    "opusscript": "^0.0.8",
+    "youtube-search": "^1.1.6",
+    "yt-search": "^2.10.4",
+    "ytdl-core": "^4.11.4"
   }
 }
